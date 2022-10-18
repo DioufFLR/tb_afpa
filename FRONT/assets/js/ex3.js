@@ -14,18 +14,23 @@
 
 // -------------Exercice 2 age
 
-// let date = prompt("Quelle est votre année de naissance ? ");
-//
-// let year = 2022;
-// let age = year - date;
-//
-// alert("Vous avez : " + age + " ans");
-//
-// if (age >= 18){
-//     alert("Vous etes majeur");
-// } else {
-//     alert("Vous etes mineur");
-// }
+const dateDuJour = new Date();
+let anneeJour = dateDuJour.getFullYear();
+let anneeDeNaissance = window.prompt("Taper votre année de naissance");
+
+function annee (x, y) {
+    let age = x - y;
+    if (age >= 18) {
+        alert("Vous êtes majeur car vous avez " + age + " ans")
+    } else if (age < 18 && age > 1){
+        alert("Vous êtes mineur car vous avez " + age + " ans")
+    } else {
+        alert("Vous êtes mineur car vous avez " + age + " an")
+    }
+}
+
+annee(anneeJour, anneeDeNaissance);
+
 
 // -------------Exercice 3 Calculette
 

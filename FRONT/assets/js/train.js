@@ -36,3 +36,24 @@
 // for (let letter of greeting) {
 //     console.log(letter)
 // }
+
+// exercice demandez a l'utilisateur d'inscrire un chiffre compris entre 0 et 10 puis affichez les autres valeurs comprisent en dessous
+
+// let chiffre = prompt("Entrez un chiffre");
+// if (chiffre > 10 || chiffre < 0) {
+//     console.log("Le nombre n'est pas entre 0 et 10")
+// } else {
+//     while (chiffre >= 0) {
+//         console.log(chiffre);
+//         chiffre--;
+//     }
+// }
+
+// demandez un nombre à l'utilisateur jusqu'à ce qu'il trouve la bonne valeur
+
+// let guess = 8;
+// let chiffre = prompt("Votre chiffre") * 1
+
+const d = new Date();
+let time = d.getFullYear();
+console.log(d);
