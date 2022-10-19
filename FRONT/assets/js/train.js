@@ -51,9 +51,23 @@
 
 // demandez un nombre à l'utilisateur jusqu'à ce qu'il trouve la bonne valeur
 
-// let guess = 8;
-// let chiffre = prompt("Votre chiffre") * 1
+// const d = new Date();
+// let time = d.getFullYear();
+// console.log(d);
 
-const d = new Date();
-let time = d.getFullYear();
-console.log(d);
+// -------------Exercice 3 Calculette
+
+let nbr1 = prompt("Saisissez un nombre entier");
+if (nbr1 >= 1) {
+} else {
+    alert("Saisissez un nombre supérieur à zéro");
+}
+
+let nbr2 = prompt("Saisissez un nombre entier");
+if (nbr2 >= 1) {
+} else {
+    alert("Saisissez un nombre supérieur à zéro");
+}
+
+result  = Number(nbr1) + Number(nbr2);
+alert("Le résultat est : " + result);
