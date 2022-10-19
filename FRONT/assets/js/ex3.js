@@ -38,25 +38,29 @@ let nbr1 = window.parseInt(prompt("Taper un nombre"));
 let nbr2 = window.parseInt(prompt("Taper un nombre"));
 let operator = window.prompt("Saisissez un opérateur (+, -, / ou *)");
 
-if (operator !== "+" && operator !== "-" && operator !== "*" && operator !== "/"){
-    alert("mauvais opérateurs veuillez réessayer");
+if (nbr1 !== 0 && nbr2 !== 0) {
+    if (operator !== "+" && operator !== "-" && operator !== "*" && operator !== "/"){
+        alert("mauvais opérateurs veuillez réessayer");
+    } else {
+        if (operator === "+") {
+            calcul = nbr1 + nbr2;
+            alert("Le résultat est : " + calcul);
+        }
+        else if (operator === "-") {
+            calcul = nbr1 - nbr2;
+            alert("Le résultat est : " + calcul);
+        }
+        else if (operator === "*") {
+            calcul = nbr1 * nbr2;
+            alert("Le résultat est : " + calcul);
+        }
+        else if (operator === "/") {
+            calcul = nbr1 / nbr2;e
+            alert("Le résultat est : " + calcul);
+        }
+    }
 } else {
-    if (operator === "+") {
-        calcul = nbr1 + nbr2;
-        alert("Le résultat est : " + calcul);
-    }
-    else if (operator === "-") {
-        calcul = nbr1 - nbr2;
-        alert("Le résultat est : " + calcul);
-    }
-    else if (operator === "*") {
-        calcul = nbr1 * nbr2;
-        alert("Le résultat est : " + calcul);
-    }
-    else if (operator === "/") {
-        calcul = nbr1 / nbr2;
-        alert("Le résultat est : " + calcul);
-    }
+    alert("La valeur 0 ne peut être prise en compte");
 }
 
 
