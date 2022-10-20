@@ -1,4 +1,4 @@
-// -----------------------Exercice 1 Saisie
+// ----------------------Exercice 1 Saisie
 
 // let i = 1;
 // let firstname = String(prompt("Saisissez le prénom n " + i + " ou cliquez sur annuler pour arrêter la saisie"));
@@ -32,20 +32,15 @@
 // }
 
 // ----------------------Exercice 3 Moyenne
+let i;
+let nbr1 = parseInt(prompt("Saisissez une note et saisissez 0 si vous voulez calculez la moyenne de vos notes"));
+let somme = nbr1;
 
-let i = 0;
-let note = parseInt(prompt("Saisissez une note et saisissez 0 si vous voulez calculez la moyenne de vos notes"));
-let moy;
-
-let result;
-while (note != 0) {
-    result = note + i;
-    console.log(note);
-    i++;
-    note = prompt("Saisissez une note et saisissez 0 si vous voulez calculez la moyenne de vos notes");
-    if (note === 0) {
-        moy = result
-    }
+for (i = 0; nbr1 !== 0; i++) {
+    console.log(nbr1);
+    nbr1 = parseInt(prompt("Saisissez une note et saisissez 0 si vous voulez calculez la moyenne de vos notes"));
+    somme += nbr1;
 }
-
-console.log(i);
+console.log(somme);
+let moyenne = somme / i;
+alert("Votre moyenne est égal à : " + moyenne);
