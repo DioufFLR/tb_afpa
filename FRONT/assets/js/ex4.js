@@ -47,16 +47,16 @@
 
 // ----------------------Exercice 4 Multiples
 //
-// let i = 1;
-// let multiple = parseInt(prompt("Rentrez le multiple que vous souhaitez"));
-// let fois = parseInt(prompt("Combien de fois voulez vous le multipliez"));
-// let result;
-//
-// while (i !== fois) {
-//     i++;
-//     result = i * multiple;
-//     console.log(result);
-// }
+let i = 1;
+let multiple = parseInt(prompt("Rentrez le multiple que vous souhaitez"));
+let fois = parseInt(prompt("Combien de fois voulez vous le multipliez"));
+let result;
+
+while (i !== fois) {
+    i++;
+    result = i * multiple;
+    console.log(result);
+}
 
 // ----------------------Exercice 5 Nombre de voyelles
 
