@@ -38,7 +38,7 @@
 //
 // for (i = 0; nbr1 !== 0; i++) {
 //     console.log(nbr1);
-//     nbr1 = parseInt(prompt("Saisissez une note et saisissez 0 si vous voulez calculer la moyenne de vos notes"));
+//     nbr1 = parseInt(prompt("Saisissez une note et saisissez 0 si vous souhaitez calculer la moyenne de vos notes"));
 //     somme += nbr1;
 // }
 // console.log(somme);
@@ -47,17 +47,29 @@
 
 // ----------------------Exercice 4 Multiples
 //
-let i = 1;
-let multiple = parseInt(prompt("Rentrez le multiple que vous souhaitez"));
-let fois = parseInt(prompt("Combien de fois voulez vous le multipliez"));
-let result;
-
-while (i !== fois) {
-    i++;
-    result = i * multiple;
-    console.log(result);
-}
+// let i = 0;
+// let multiple = parseInt(prompt("Rentrez le multiple que vous souhaitez"));
+// let fois = parseInt(prompt("Combien de fois voulez vous le multipliez"));
+// let result;
+//
+// while (i !== fois) {
+//     i++;
+//     result = i * multiple;
+//     console.log(i + "x" + multiple + " = " + result);
+// }
 
 // ----------------------Exercice 5 Nombre de voyelles
 
+let i = 0;
+let mot = prompt("Tapez le mot que vous souhaitez : ");
+let nbrLettre = mot.length;
+let voyelle = 0;
+console.log(nbrLettre);
 
+for (i = 0; i < nbrLettre; i++) {
+        if (mot === "a" || mot === "e" || mot === "i" || mot === "o" || mot === "u" || mot === "y") {
+        voyelle++;
+    }
+}
+console.log(i);
+console.log("Nombre de voyelles : " + voyelle);
