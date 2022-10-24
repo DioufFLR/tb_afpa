@@ -60,16 +60,36 @@
 
 // ----------------------Exercice 5 Nombre de voyelles
 
-let i = 0;
-let mot = prompt("Tapez le mot que vous souhaitez : ");
-let nbrLettre = mot.length;
-let voyelle = 0;
-console.log(nbrLettre);
+// Avec la méthode charAt
 
-for (i = 0; i < nbrLettre; i++) {
-        if (mot === "a" || mot === "e" || mot === "i" || mot === "o" || mot === "u" || mot === "y") {
-        voyelle++;
+let i = 0;
+let mot = String(prompt("Tapez le mot que vous souhaitez : "));
+let voyelle = 0;
+let string = mot.toString();
+let nbrLettre = mot.length;
+for (i = 0; i <= nbrLettre; i++) {
+    if (string.charAt(i) === "a" || string.charAt(i) === "e" || string.charAt(i) === "i" || string.charAt(i) === "o" || string.charAt(i) === "u" || string.charAt(i) === "y") {
+        voyelle ++;
     }
 }
-console.log(i);
-console.log("Nombre de voyelles : " + voyelle);
+console.log(voyelle);
+
+// Avec la méthode indexOf (à faire plus tard)
+
+// console.log(nbrLettre);
+// let chaine = mot.substring(0, 1);
+// let voy = mot.indexOf("u", 0);
+// console.log(voy);
+// console.log(chaine);
+// for (i = 0; i < nbrLettre; i++) {
+//         if (string.charAt(i) == "e" || voy === "e" || voy === "i" || voy === "o" || voy === "u" || voy === "y") {
+//         voyelle++;
+//     }
+// }
+// console.log(i);
+// console.log("Nombre de voyelles : " + voyelle);
+// console.log(voy);
+//
+// let text = "Hello world, welcome to the universe.";
+// text.indexOf("a");
+
