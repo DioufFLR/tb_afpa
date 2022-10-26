@@ -42,7 +42,39 @@
 // console.log(tab[1][2]);
 
 // Exercice 1
+//
+// let lengthArray = parseInt(prompt("Choisissez la taille du tableau"));
+// let myArray = new Array(lengthArray);
+//
+// let value;
+// for (let i = 0; i < lengthArray; i++) {
+//     value = prompt("Rentrez les données du tableau");
+//     myArray[i] = [value];
+// }
+//
+// console.log(value);
+// console.table(myArray);
+
+// Exercice 2
 
 
+// let myArray = new Array(lengthArray);
+//
+// let value;
+// for (let i = 0; i < lengthArray; i++) {
+//     value = prompt("Rentrez les données du tableau");
+//     myArray[i] = [value];
+// }
+//
+// console.log(value);
+// console.table(myArray);
 
 
+function getInteger() {
+    let lengthArray = parseInt(prompt("Choisissez la taille du tableau"));
+}
+getInteger();
+
+function initTab() {
+
+}
