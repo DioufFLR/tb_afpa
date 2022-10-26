@@ -40,7 +40,7 @@ function strtrok(str1, str2, n) {
     document.getElementById("x").innerHTML = str2[n-1];
 }
 
-let n = parseInt(prompt("Entrez le numéro du not voulant être obtenu"));
+let n = parseInt(prompt("Entrez le numéro du mot voulant être obtenu"));
 
 strtrok(str1, str2, n);
 
