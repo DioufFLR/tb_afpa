@@ -70,11 +70,35 @@
 // console.table(myArray);
 
 
+
 function getInteger() {
-    let lengthArray = parseInt(prompt("Choisissez la taille du tableau"));
+    lengthArray = parseInt(prompt("Choisissez la taille de l'index"));
 }
-getInteger();
+getInteger()
 
 function initTab() {
-
+    table = new Array(lengthArray);
 }
+initTab();
+
+function saisieTab() {
+    let value;
+    for (let i = 0; i < lengthArray; i++) {
+        value = prompt("Rentrez les données du tableau");
+        table[i] = [value];
+    }
+}
+console.table(table);
+
+saisieTab();
+
+function afficheTab() {
+    document.write(table);
+}
+
+function rechercheTab() {
+    let post = parseInt(prompt("Veuillez entrer la valeur recherchée"))
+    let value2 = table[(post-1)];
+    console.log(value2);
+}
+
