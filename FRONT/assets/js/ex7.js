@@ -41,7 +41,7 @@ form.codePostal.addEventListener("change", function () {
 });
 
 const validCodePostal = function (inputCodePostal) {
-    let regexCodePostal = new RegExp(/^([0-9]{5})$/);
+    let regexCodePostal = new RegExp(/^([a-z0-9]{5})$/);
     let testCodePostal = regexCodePostal.test(inputCodePostal.value);
     if (testCodePostal === false) {
         alert("Veuillez rentrez un code postal valide");
@@ -64,3 +64,11 @@ const validVille = function (inputVille) {
     }
     console.log(testVille);
 }
+
+// ---------------------- TODO list
+//function avec return false
+//mettre required dans les input
+//le choix du menu déroulant qui s'intègre dans la texte area
+//choisissez ne doit pas apparaître dans la zone de texte area
+//effacer les champs des input quand la string n'est pas bonne
+//
