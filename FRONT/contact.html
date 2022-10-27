@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact exercice 7</title>
+</head>
+<body>
+    <form action="#" method="post" name="formTest" id="formTest">
+        <fieldset>
+            <legend>Vos coordonnées :</legend>
+            <p>Ces zones sont obligatoires *</p>
+            <label for="societe">Société :</label><input type="text" id="societe"><br>
+            <label for="personnes_contact">Personnes à contacter :</label><input type="text" id="personnes_contact"><br>
+            <label for="adresse">Adresse de l'entreprise :</label><textarea name="adresse" id="adresse" cols="20" rows="3"></textarea><br>
+            <label for="code_postal">Code postal :</label><input type="text" name="code_postal" id="code_postal"><br>
+            <label for="ville">Ville :</label><input type="text" name="ville" id="ville"><br>
+            <label for="email">E-mail :</label><input type="text" name="email" id="email"><br>
+            <label for="telephone">Téléphone :</label><input type="text" name="telephone" id="telephone"><br>
+            <label for="selection">Sélectionnez l'environnement technique du projet :</label><select name="selection" id="selection" >
+                <option value="choisissez">--Choisissez--</option>
+                <option value="access">Access</option>
+                <option value="java">Java</option>
+                <option value="delphi">Delphi</option>
+                <option value="autres">Autres</option>
+            </select>
+            <label for="message"></label><textarea name="message" id="message" cols="20" rows="3"></textarea><br>
+            <label for="envoyer"></label><input type="submit" name="envoyer" id="envoyer">
+            <label for="reset"></label><input type="reset" name="reset" id="reset">
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
