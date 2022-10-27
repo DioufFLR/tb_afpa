@@ -10,28 +10,43 @@
 <body>
     <form action="#" method="post" name="formTest" id="formTest">
         <fieldset>
-            <legend>Vos coordonnées :</legend>
+            <legend><h2>Vos coordonnées :</h2></legend>
             <p>Ces zones sont obligatoires *</p>
-            <label for="societe">Société :</label><input type="text" id="societe"><br>
-            <label for="personnes_contact">Personnes à contacter :</label><input type="text" id="personnes_contact"><br>
-            <label for="adresse">Adresse de l'entreprise :</label><textarea name="adresse" id="adresse" cols="20" rows="3"></textarea><br>
-            <label for="code_postal">Code postal :</label><input type="text" name="code_postal" id="code_postal"><br>
-            <label for="ville">Ville :</label><input type="text" name="ville" id="ville"><br>
-            <label for="email">E-mail :</label><input type="text" name="email" id="email"><br>
-            <label for="telephone">Téléphone :</label><input type="text" name="telephone" id="telephone"><br>
-            <label for="selection">Sélectionnez l'environnement technique du projet :</label><select name="selection" id="selection" >
+            <label for="societe" id="societe">Société :</label><input type="text" name="societe"   minlength="1">
+            <br>
+            <label for="personnes_contact" id="personnes_contact">Personnes à contacter :</label><input type="text" name="personnes_contact" minlength="1">
+            <br>
+            <label for="adresse" id="adresse">Adresse de l'entreprise :</label><textarea name="adresse" cols="20" rows="3"></textarea>
+            <br>
+            <label for="code_postal" id="code_postal">Code postal :</label><input type="text" name="code_postal" minlength="5" maxlength="5">
+            <br>
+            <label for="ville" id="ville">Ville :</label><input type="text" name="ville" minlength="1">
+            <br>
+            <label for="email" id="email">E-mail :</label><input type="text" name="email">
+            <br>
+            <label for="telephone">Téléphone :</label><input type="text" name="telephone" id="telephone">
+            <br>
+            <label for="selection" id="selection">Sélectionnez l'environnement technique du projet :</label><select name="selection" >
                 <option value="choisissez">--Choisissez--</option>
                 <option value="access">Access</option>
                 <option value="java">Java</option>
                 <option value="delphi">Delphi</option>
+                <option value="visual">Visual basic</option>
+                <option value="power">Power Builder</option>
+                <option value="internet">Internet</option>
+                <option value="intranet">Intranet</option>
+                <option value="windows">Windows NT</option>
+                <option value="unix">Unix</option>
+                <option value="sql">SQL Server</option>
+                <option value="oracle">Oracle</option>
                 <option value="autres">Autres</option>
             </select>
-            <label for="message"></label><textarea name="message" id="message" cols="20" rows="3"></textarea><br>
-            <label for="envoyer"></label><input type="submit" name="envoyer" id="envoyer">
-            <label for="reset"></label><input type="reset" name="reset" id="reset">
+            <label for="message" id="message"></label><textarea name="message" cols="20" rows="3"></textarea>
+            <br>
+            <input type="submit" value="Envoyer" name="envoyer" id="envoyer">
+            <input type="reset" value="Annuler" name="reset" id="reset">
         </fieldset>
     </form>
-
-
+    <script src="assets/js/ex7.js"></script>
 </body>
 </html>
