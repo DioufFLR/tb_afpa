@@ -65,10 +65,17 @@ const validVille = function (inputVille) {
     console.log(testVille);
 }
 
+// ----------------------Fonction checkForm pour envoyer ou non le formulaire---------------
+
+// function checkForm() {
+//     alert("Control champ " + form.elements["societe"].value + " " + form.elements["personnesContact"].value);
+//     return false;
+// }
+// checkForm();
+
 // ---------------------- TODO list
 //function avec return false
 //mettre required dans les input
 //le choix du menu déroulant qui s'intègre dans la texte area
 //choisissez ne doit pas apparaître dans la zone de texte area
 //effacer les champs des input quand la string n'est pas bonne
-//
